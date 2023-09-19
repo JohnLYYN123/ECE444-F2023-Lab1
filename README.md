@@ -7,3 +7,9 @@
 ## Activity 1: Installation
 ![img.png](Screenshots/img.png)
 
+## Activity 2: Replay examples 2-1 and 2-2
+#### commits:
+![img.png](Screenshots/img1.png)
+
+#### HTML Page:
+![img.png](Screenshots/img2.png)
