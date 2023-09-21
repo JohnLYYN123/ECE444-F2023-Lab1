@@ -20,3 +20,15 @@
 
 #### HTML Page:
 ![img.png](Screenshots/img4.png)
+
+
+## Activity 4: Replay and modify Example in Chapter 4
+
+#### Screenshots
+![img.png](Screenshots/img5.png)
+
+![img.png](Screenshots/img6.png)
+
+![img.png](Screenshots/img7.png)
+
+![img.png](Screenshots/img8.png)
