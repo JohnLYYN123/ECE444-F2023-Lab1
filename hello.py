@@ -4,7 +4,7 @@ from flask_moment import Moment
 from datetime import datetime
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
-from wtforms.validators import DataRequired
+from wtforms.validators import DataRequired, Email
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
@@ -14,6 +14,8 @@ app.config['SECRET_KEY'] = 'good morning buenos dias'
 
 class NameForm(FlaskForm):
     name = StringField('What is your name?', validators=[DataRequired()])
+    email = StringField('What is your UofT Email address?',
+                        validators=[DataRequired(), Email()])
     submit = SubmitField('Submit')
 
 
@@ -23,11 +25,25 @@ def index():
     form = NameForm()
     if form.validate_on_submit():
         old_name = session.get('name')
+        old_email = session.get('email')
+
         if old_name is not None and old_name != form.name.data:
             flash('Looks like you have changed your name!')
+
         session['name'] = form.name.data
+
+        email_invalid = False
+        if 'utoronto' in form.email.data:
+            if old_email is not None and old_email != form.email.data:
+                flash('Looks like you have changed your email')
+        else:
+            email_invalid = True
+
+        session['email'] = form.email.data
+        session['email_invalid'] = email_invalid
         return redirect(url_for('index'))
-    return render_template("index.html", form=form, name=session.get('name'))
+    return render_template("index.html", form=form, name=session.get('name'),
+                           email=session.get('email'), email_invalid=session.get('email_invalid'))
 
 
 # example 2.2 part
