@@ -7,3 +7,5 @@
 #### Cleaned README.md
 ![img.png](Screenshots/img11.png)
 
+#### Changed default branch to "lab3" branch
+![img.png](Screenshots/img12.png)
