@@ -9,3 +9,8 @@
 
 #### Changed default branch to "lab3" branch
 ![img.png](Screenshots/img12.png)
+
+
+### Activity 2: 
+#### successfully installed docker
+![img.png](Screenshots/img13.png)
