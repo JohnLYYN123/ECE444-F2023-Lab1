@@ -28,5 +28,5 @@
 #### Docker container running
 ![img.png](Screenshots/img16.png)
 
-#### Webpage at local:5000
+#### Webpage at localhost:5000
 ![img.png](Screenshots/img17.png)
