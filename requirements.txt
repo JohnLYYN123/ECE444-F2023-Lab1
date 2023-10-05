@@ -1,0 +1,11 @@
+# the following requirements are used to create environments
+
+flask
+flask_bootstrap
+flask_moment
+flask-wtf
+itsdangerous
+jinja2
+werkzeug==2.0.3
+wtforms
+
