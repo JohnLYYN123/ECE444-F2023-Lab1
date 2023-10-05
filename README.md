@@ -19,3 +19,14 @@
 ### Activity 3:
 #### Application running locally
 ![img.png](Screenshots/img14.png)
+
+
+### Activity 4:
+#### Successfully built docker image
+![img.png](Screenshots/img15.png)
+
+#### Docker container running
+![img.png](Screenshots/img16.png)
+
+#### Webpage at local:5000
+![img.png](Screenshots/img17.png)
